@@ -60,7 +60,7 @@ class _secState extends State<sec> {
               height: 57,
               width: 290,
               child: ClipRRect(
-                child: TextField(
+                child: TextField(textAlign: TextAlign.center,cursorColor: Colors.black,
                   controller: controller,
                   decoration: InputDecoration(focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                       enabledBorder: OutlineInputBorder(
@@ -83,7 +83,7 @@ class _secState extends State<sec> {
             Container(
               height: 57,
               width: 290,
-              child: TextField(
+              child: TextField(textAlign: TextAlign.center,cursorColor: Colors.black,
                 controller: _controller,
                 decoration: InputDecoration(focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
                     enabledBorder: OutlineInputBorder(
