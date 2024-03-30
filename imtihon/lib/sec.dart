@@ -59,23 +59,23 @@ class _secState extends State<sec> {
             Container(
               height: 57,
               width: 290,
-              child: ClipRRect(
-                child: TextField(textAlign: TextAlign.center,cursorColor: Colors.black,
-                  controller: controller,
-                  decoration: InputDecoration(focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
-                      enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(color: Colors.black.withOpacity(0.0))),
-                      border: OutlineInputBorder(
+              child: TextField(textAlign: TextAlign.center,cursorColor: Colors.black,
+                controller: controller,
+                decoration: InputDecoration(focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.transparent)),
+                    enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(
-                          color: Colors.black.withOpacity(0.0),
-                        ),
+                        borderSide: BorderSide(color: Colors.black.withOpacity(0.0))),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      borderSide: BorderSide(
+                        color: Colors.black.withOpacity(0.0),
                       ),
-                      labelText: 'Username',
-                      labelStyle: TextStyle(color: Colors.white)),
-                ).asGlass(clipBorderRadius: BorderRadius.circular(20)),
-              ),
+                    ),
+label: Padding(
+  padding: const EdgeInsets.only(top:10),
+  child: Text('Username'),
+),                    labelStyle: TextStyle(color: Colors.white)),
+              ).asGlass(clipBorderRadius: BorderRadius.circular(20)),
             ),
             SizedBox(
               height: 40,
@@ -95,8 +95,7 @@ class _secState extends State<sec> {
                         color: Colors.transparent,
                       ),
                     ),
-                    labelText: 'password',
-                    labelStyle: TextStyle(color: Colors.white)),
+label: Padding(padding: EdgeInsets.only(top: 10),child: Text('Password'),),                    labelStyle: TextStyle(color: Colors.white)),
               ).asGlass(clipBorderRadius: BorderRadius.circular(20)),
             ),
             SizedBox(
